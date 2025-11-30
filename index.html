@@ -2,6 +2,7 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>♥️</title>
 
 <style>
@@ -14,24 +15,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: Arial, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         overflow: hidden;
         flex-direction: column;
     }
 
     .text-box {
         width: 90%;
-        max-width: 650px;
-        font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+        max-width: 700px;
+        font-size: clamp(1.8rem, 5vw, 2.4rem);
         color: #ffffff;
         text-align: center;
         white-space: pre-line;
         border-right: 3px solid #fff;
         overflow: hidden;
         animation: caret 0.7s infinite;
-        line-height: 1.45;
-        padding: 0 10px;
-        margin-bottom: 20px;
+        line-height: 1.6;
+        padding: 25px 30px;
+        margin-bottom: 30px;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
 
     @keyframes caret {
@@ -42,21 +46,35 @@
 
     #nextBtn {
         display: none;
-        padding: 10px 20px;
-        font-size: 1rem;
-        background-color: #ff4f8b;
+        padding: 15px 35px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background: linear-gradient(45deg, #ff4f8b, #ff7aa5);
         color: #fff;
         border: none;
-        border-radius: 8px;
+        border-radius: 12px;
         cursor: pointer;
-        transition: background 0.3s;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
 
     #nextBtn:hover {
-        background-color: #b3005a;
+        background: linear-gradient(45deg, #b3005a, #ff4f8b);
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 400px) {
+        .text-box {
+            font-size: clamp(1.5rem, 4.5vw, 1.9rem);
+            padding: 20px 20px;
+        }
+
+        #nextBtn {
+            padding: 12px 25px;
+            font-size: 1.2rem;
+        }
     }
 </style>
-
 </head>
 <body>
 
