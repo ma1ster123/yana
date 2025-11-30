@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #ffbfd4, #ff7aa5, #ff4f8b, #b3005a);
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #b3005a;
+    text-shadow: 0 0 5px #ffffffaa;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ff4f8b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #ff2e63;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.yes-button:hover,
+.no-button:hover {
+    transform: scale(1.1);
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+}

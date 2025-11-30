@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #ffbfd4, #ff7aa5, #ff4f8b, #b3005a);
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.header_text {
+    font-size: 3em;
+    color: #ff4f8b;
+    text-shadow: 0 0 10px #ffffffaa;
+    margin-bottom: 20px;
+}
+
+.gif_container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
